@@ -1,0 +1,44 @@
+.InputContainer {
+  position: relative;
+  width: 100%;
+}
+
+.Input {
+  border: 2px solid var(--light-grey-2);
+  height: 34px;
+  padding-block: 12px;
+  padding-inline-end: 24px;
+  padding-inline-start: 62px;
+  border-radius: 50px;
+  font-size: var(--font-sm-2);
+  color: var(--dark-grey);
+  width: calc(100% - 24px - 62px);
+  display: block;
+}
+
+.Input::placeholder {
+  font-size: inherit;
+}
+
+.SearchIcon,
+.MicIcon {
+  position: absolute;
+  display: inline-block;
+  z-index: 2;
+  top: 18%;
+  transform: translateY(10%);
+}
+
+.MicIcon {
+  width: 38px;
+  right: 8px;
+  right: 24px;
+}
+
+.SearchIcon {
+  left: 24px;
+}
+
+.MicIcon img {
+  width: 100%;
+}
